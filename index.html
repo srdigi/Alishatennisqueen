@@ -3,174 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amita Tennis Queen | Premium Tennis Community</title>
-  <meta name="description" content="Join Amita Tennis Queen – a premium Telegram community for tennis lovers. Match insights, analysis, and smart tennis content." />
-  
-  <!-- Meta Event (Custom – Telegram Join) -->
-  <script>
-    function trackTelegramJoin() {
-      if (typeof fbq === 'function') {
-        fbq('trackCustom', 'TelegramJoin', {
-          content_name: 'Amita Tennis Queen',
-          platform: 'Telegram'
-        });
-      }
-    }
-  </script>
+  <title>Amita Tennis Queen | Join Telegram</title>
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: 'Poppins', Arial, sans-serif;
-      background: url('https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf') no-repeat center center/cover;
+      font-family: Arial, sans-serif;
       min-height: 100vh;
-      color: #fff;
+      background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
-    }
+
     .overlay {
-      background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.65));
       min-height: 100vh;
+      background: rgba(0,0,0,0.55);
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 20px;
     }
+
     .card {
+      background: #ffffff;
       max-width: 420px;
       width: 100%;
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-radius: 22px;
-      padding: 30px 26px;
+      border-radius: 16px;
+      padding: 28px 24px;
       text-align: center;
-      box-shadow: 0 30px 60px rgba(0,0,0,0.7);
-      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     }
-    }
+
     .title {
       font-size: 26px;
       font-weight: 700;
+      color: #1b1b1b;
       margin-bottom: 6px;
-      letter-spacing: 0.5px;
     }
+
     .subtitle {
       font-size: 14px;
-      opacity: 0.85;
+      color: #555;
       margin-bottom: 18px;
     }
+
     .badge {
       display: inline-block;
+      background: #1fa34a;
+      color: #fff;
       padding: 6px 14px;
-      background: linear-gradient(135deg, #f5c542, #d4a017);
-      color: #111;
       border-radius: 50px;
       font-size: 12px;
       font-weight: 600;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
+
     .features {
       text-align: left;
-      margin: 20px 0;
       font-size: 14px;
-      line-height: 1.7;
+      color: #333;
+      margin: 18px 0;
     }
+
     .features li {
       list-style: none;
       margin-bottom: 10px;
     }
+
     .features li::before {
-      content: '🎾';
-      margin-right: 8px;
+      content: '🎾 ';
     }
+
     .count {
       font-size: 15px;
+      color: #111;
       margin: 14px 0 20px;
-      opacity: 0.9;
+      font-weight: 600;
     }
-    .trust {
-      font-size: 12px;
-      margin-top: 6px;
-      opacity: 0.8;
-    }
-    .ball {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background: radial-gradient(circle at 30% 30%, #fff176, #cddc39);
-      border-radius: 50%;
-      top: 20%;
-      left: 10%;
-      animation: float 6s ease-in-out infinite;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    }
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-25px); }
-      100% { transform: translateY(0px); }
-    }
+
     .join-btn {
-      display: inline-block;
+      display: block;
       width: 100%;
-      padding: 15px 0;
-      background: linear-gradient(135deg, #00c853, #64dd17);
-      color: #0b1f12;
-      font-size: 17px;
+      padding: 14px 0;
+      background: #0088cc;
+      color: #fff;
+      font-size: 16px;
       font-weight: 700;
-      border-radius: 14px;
+      border-radius: 12px;
       text-decoration: none;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      animation: pulse 2s infinite;
     }
-    @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(100,221,23,0.6); }
-      70% { box-shadow: 0 0 0 14px rgba(100,221,23,0); }
-      100% { box-shadow: 0 0 0 0 rgba(100,221,23,0); }
-    }
-    }
-    .join-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(0,136,204,0.5);
-    }
+
     .footer {
-      margin-top: 18px;
+      margin-top: 16px;
       font-size: 11px;
-      opacity: 0.6;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <div class="ball"></div>
     <div class="card">
       <div class="badge">PREMIUM TENNIS COMMUNITY</div>
-      <div class="trust">🏆 Trusted by Tennis Lovers Worldwide</div>
       <h1 class="title">AMITA TENNIS QUEEN</h1>
-      <p class="subtitle">Smart Tennis Insights • Match Awareness • Game Analysis</p>
+      <p class="subtitle">Tennis Insights • Match Awareness • Analysis</p>
 
       <ul class="features">
-        <li>Pre-match & in-game tennis insights</li>
-        <li>Form, surface & momentum analysis</li>
-        <li>Grand Slams, ATP & WTA coverage</li>
-        <li>Clean, ad-safe & knowledge-driven content</li>
+        <li>Daily tennis match insights</li>
+        <li>ATP & WTA coverage</li>
+        <li>Surface & form analysis</li>
+        <li>Clean & knowledge based content</li>
       </ul>
 
-      <div class="count">👥 <strong><span id="subCount">23486</span>+</strong> Tennis Lovers Connected</div>
-      <script>
-        let count = 23486;
-        const el = document.getElementById('subCount');
-        setInterval(() => {
-          count += Math.floor(Math.random() * 2);
-          el.textContent = count;
-        }, 6000);
-      </script>
+      <div class="count">👥 23,486+ Tennis Lovers Joined</div>
 
-      <a href="https://t.me/+h-3jOJufXOI0MGZl" target="_blank" class="join-btn" onclick="trackTelegramJoin()">
-        🚀 Join Telegram Channel
+      <a href="https://t.me/+h-3jOJufXOI0MGZl" target="_blank" class="join-btn">
+        Join Telegram Channel
       </a>
 
       <div class="footer">
-        This page is for tennis content & community awareness only.
+        This page is only for tennis community awareness.
       </div>
     </div>
   </div>
